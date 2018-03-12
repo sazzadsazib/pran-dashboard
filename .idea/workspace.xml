@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9bb1466-47a2-4269-89d8-e535b56f3cee" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/farmer.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/farmerdetails.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/payment.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/css/now-ui-dashboard.css" afterPath="$PROJECT_DIR$/assets/css/custom.css" />
-      <change beforePath="$PROJECT_DIR$/assets/css/now-ui-dashboard.css.map" afterPath="$PROJECT_DIR$/assets/css/custom.css.map" />
-      <change beforePath="$PROJECT_DIR$/assets/css/now-ui-dashboard.min.css" afterPath="$PROJECT_DIR$/assets/css/custom.min.css" />
-      <change beforePath="$PROJECT_DIR$/assets/demo/demo.js" afterPath="$PROJECT_DIR$/assets/demo/demo.js" />
-      <change beforePath="$PROJECT_DIR$/examples/dashboard.html" afterPath="$PROJECT_DIR$/examples/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/examples/icons.html" afterPath="$PROJECT_DIR$/examples/icons.html" />
-      <change beforePath="$PROJECT_DIR$/examples/map.html" afterPath="$PROJECT_DIR$/examples/map.html" />
-      <change beforePath="$PROJECT_DIR$/examples/notifications.html" afterPath="$PROJECT_DIR$/examples/notifications.html" />
-      <change beforePath="$PROJECT_DIR$/examples/tables.html" afterPath="$PROJECT_DIR$/examples/tables.html" />
-      <change beforePath="$PROJECT_DIR$/examples/typography.html" afterPath="$PROJECT_DIR$/examples/typography.html" />
-      <change beforePath="$PROJECT_DIR$/examples/upgrade.html" afterPath="$PROJECT_DIR$/examples/upgrade.html" />
-      <change beforePath="$PROJECT_DIR$/examples/user.html" afterPath="$PROJECT_DIR$/examples/user.html" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/nucleo-icons.html" afterPath="$PROJECT_DIR$/nucleo-icons.html" />
-    </list>
+    <list default="true" id="d9bb1466-47a2-4269-89d8-e535b56f3cee" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -326,12 +307,12 @@
       <updated>1520750699768</updated>
       <workItem from="1520750701556" duration="5637000" />
       <workItem from="1520794145440" duration="5644000" />
-      <workItem from="1520840446930" duration="3167000" />
+      <workItem from="1520840446930" duration="3228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14448000" />
+    <option name="totallyTimeSpent" value="14509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
