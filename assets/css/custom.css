@@ -3567,11 +3567,33 @@ Created using IcoMoon - icomoon.io
   .page-header .container h6.category-absolute {
     width: 90%; } }
 
-/*# sourceMappingURL=now-ui-dashboard.css.map */
-
-
-/*My custom css*/
+/*# sourceMappingURL=custom.css.map custom css*/
 
 .panel-header-custom-color {
-  background: linear-gradient(to bottom, #444 0%, #888 60%, #ccc 100%) !important;
+  background: linear-gradient(to bottom, #c65757 0%, #c65757 60%, #c65757 100%) !important;
+}
+
+.navbar-white {
+  background: #ed1c24 !important;
+}
+
+.img-avatar-custom {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 4px #6f6f6f;
+}
+
+.pull-right {
+  margin-left: auto;
+  margin-right: auto;
+}
+.custom-payment > thead> tr> th {
+  font-size: 14px;
+  font-weight: bold;
+}
+.avatar-small {
+  width: 40px;
+  height: 40px;
 }

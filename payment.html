@@ -34,19 +34,19 @@
         </div>
         <div class="sidebar-wrapper">
             <ul class="nav">
-                <li class="active">
-                    <a href="#">
+                <li >
+                    <a href="index.html">
                         <i class="now-ui-icons shopping_delivery-fast"></i>
                         <p>Collection Point</p>
                     </a>
                 </li>
-                <li>
+                <li >
                     <a href="farmer.html">
                         <i class="now-ui-icons education_atom"></i>
                         <p>Farmer Lists</p>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="payment.html">
                         <i class="now-ui-icons location_map-big"></i>
                         <p>Payment</p>
@@ -57,7 +57,7 @@
     </div>
     <div class="main-panel">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-white  navbar-absolute bg-primary fixed-top">
             <div class="container-fluid">
                 <div class="navbar-wrapper">
                     <div class="navbar-toggle">
@@ -118,84 +118,15 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <div class="panel-header panel-header-lg panel-header-custom-color">
-            <canvas id="bigDashboardChart"></canvas>
-        </div>
-        <div class="content">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <h5 class="card-category">Milk Collected</h5>
-                            <h4 class="card-title">Last 7 Days</h4>
-                            <div class="dropdown">
-                                <button type="button" class="btn btn-round btn-sm btn-default  btn-simple btn-icon no-caret" >
-                                    <i class="now-ui-icons arrows-1_refresh-69"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="lineChartExample"></canvas>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <h5 class="card-category">Payment Done</h5>
-                            <h4 class="card-title">Last 7 Days</h4>
-                            <div class="dropdown">
-                                <button type="button" class="btn btn-round btn-sm btn-default  btn-simple btn-icon no-caret" >
-                                    <i class="now-ui-icons arrows-1_refresh-69"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="lineChartExampleWithNumbersAndGrid"></canvas>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <h5 class="card-category">Payment Issue</h5>
-                            <h4 class="card-title">Last 7 Days</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="barChartSimpleGradientsNumbers"></canvas>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="now-ui-icons ui-2_time-alarm"></i> Last 7 days
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="content" style="margin-top: 100px;">
             <div class="row">
                 <div class="col-md-12">
                     <div class="card" style="padding: 30px">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card-header">
-                                    <h5 class="card-category">Information of</h5>
-                                    <h4 class="card-title"> Collection Points</h4>
+                                    <h5 class="card-category">Payment</h5>
+                                    <h4 class="card-title">Details</h4>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -204,231 +135,415 @@
                                         <i class="now-ui-icons ui-1_zoom-bold"></i> Sort
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">Sort By Value</a>
                                         <a class="dropdown-item" href="#">Sort By Location</a>
-                                        <a class="dropdown-item" href="#">Sort By Date</a>
-                                        <a class="dropdown-item" href="#">Sort By Highest Collection</a>
+                                        <a class="dropdown-item" href="#">Sort By Name</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table">
+                                <table class="table custom-payment">
                                     <thead class=" text-primary">
                                     <th >
-                                        Collection Point
+                                        Full Name
                                     </th>
                                     <th >
-                                        Area
+                                        Location
                                     </th>
                                     <th >
-                                        Milk Collected(Litre)
+                                        Milk (Litre)
                                     </th>
                                     <th >
-                                        Total Value
+                                        Price
+                                    </th>
+                                    <th>
+                                        Fat
+                                    </th>
+                                    <th>
+                                        Water
+                                    </th>
+                                    <th>
+                                        Milk
                                     </th>
                                     <th  class="text-right" >
-                                        Details
+                                        Make Payment
                                     </th>
 
                                     </thead>
                                     <tbody>
                                     <tr >
                                         <td >
-                                            Gazipur-01
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
                                         </td>
                                         <td >
                                             Gazipur
                                         </td>
                                         <td >
-                                            454
+                                            20
                                         </td>
                                         <td >
-                                            24970 bdt
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
                                         </td>
                                         <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
+                                            <button class="btn btn-sm btn-danger btn-round" onclick="demo.showNotification('top','center')">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
                                             </button>
                                         </td>
                                     </tr>
                                     <tr >
                                         <td >
-                                            Gazipur-02
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
                                         </td>
                                         <td >
                                             Gazipur
                                         </td>
                                         <td >
-                                            424
+                                            20
                                         </td>
                                         <td >
-                                            23950 bdt
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
                                         </td>
                                         <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
+                                            <button class="btn btn-sm btn-danger btn-round" onclick="demo.showNotification('top','center')">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
                                             </button>
                                         </td>
                                     </tr>
                                     <tr >
                                         <td >
-                                            Savar-01
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
                                         </td>
                                         <td >
-                                            Savar
+                                            Gazipur
                                         </td>
                                         <td >
-                                            332
+                                            20
                                         </td>
                                         <td >
-                                            19970 bdt
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
                                         </td>
                                         <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
+                                            <button class="btn btn-sm btn-danger btn-round" onclick="demo.showNotification('top','center')">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
                                             </button>
                                         </td>
                                     </tr>
                                     <tr >
                                         <td >
-                                            Savar-02
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
                                         </td>
                                         <td >
-                                            Savar
+                                            Gazipur
                                         </td>
                                         <td >
-                                            430
+                                            20
                                         </td>
                                         <td >
-                                            25970 bdt
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
                                         </td>
                                         <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
+                                            <button class="btn btn-sm btn-danger btn-round" onclick="demo.showNotification('top','center')">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
+                                        </td>
+                                        <td >
+                                            Gazipur
+                                        </td>
+                                        <td >
+                                            20
+                                        </td>
+                                        <td >
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
+                                        </td>
+                                        <td  class="text-right" >
+                                            <button class="btn btn-sm btn-danger btn-round" onclick="demo.showNotification('top','center')">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
+                                        </td>
+                                        <td >
+                                            Gazipur
+                                        </td>
+                                        <td >
+                                            20
+                                        </td>
+                                        <td >
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
+                                        </td>
+                                        <td  class="text-right" >
+                                            <button class="btn btn-sm btn-danger btn-round">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
+                                        </td>
+                                        <td >
+                                            Gazipur
+                                        </td>
+                                        <td >
+                                            20
+                                        </td>
+                                        <td >
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
+                                        </td>
+                                        <td  class="text-right" >
+                                            <button class="btn btn-sm btn-danger btn-round">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
+                                        </td>
+                                        <td >
+                                            Gazipur
+                                        </td>
+                                        <td >
+                                            20
+                                        </td>
+                                        <td >
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
+                                        </td>
+                                        <td  class="text-right" >
+                                            <button class="btn btn-sm btn-danger btn-round">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
+                                        </td>
+                                        <td >
+                                            Gazipur
+                                        </td>
+                                        <td >
+                                            20
+                                        </td>
+                                        <td >
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
+                                        </td>
+                                        <td  class="text-right" >
+                                            <button class="btn btn-sm btn-danger btn-round">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
+                                        </td>
+                                        <td >
+                                            Gazipur
+                                        </td>
+                                        <td >
+                                            20
+                                        </td>
+                                        <td >
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
+                                        </td>
+                                        <td  class="text-right" >
+                                            <button class="btn btn-sm btn-danger btn-round">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
+                                        </td>
+                                        <td >
+                                            Gazipur
+                                        </td>
+                                        <td >
+                                            20
+                                        </td>
+                                        <td >
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
+                                        </td>
+                                        <td  class="text-right" >
+                                            <button class="btn btn-sm btn-danger btn-round">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
+                                        </td>
+                                        <td >
+                                            Gazipur
+                                        </td>
+                                        <td >
+                                            20
+                                        </td>
+                                        <td >
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
+                                        </td>
+                                        <td  class="text-right" >
+                                            <button class="btn btn-sm btn-danger btn-round">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >
+                                            <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom avatar-small" /> Abdul Karim
+                                        </td>
+                                        <td >
+                                            Gazipur
+                                        </td>
+                                        <td >
+                                            20
+                                        </td>
+                                        <td >
+                                            4056 bdt
+                                        </td>
+                                        <td>
+                                            4%
+                                        </td>
+                                        <td>
+                                            65%
+                                        </td>
+                                        <td>
+                                            31%
+                                        </td>
+                                        <td  class="text-right" >
+                                            <button class="btn btn-sm btn-danger btn-round">
+                                                <i class="now-ui-icons business_money-coins"></i> Make Payment
                                             </button>
                                         </td>
                                     </tr>
 
-                                    <tr >
-                                        <td >
-                                            Savar-03
-                                        </td>
-                                        <td >
-                                            Savar
-                                        </td>
-                                        <td >
-                                            436
-                                        </td>
-                                        <td >
-                                            26770 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
-
-                                    <tr >
-                                        <td >
-                                            Savar-04
-                                        </td>
-                                        <td >
-                                            Savar
-                                        </td>
-                                        <td >
-                                            344
-                                        </td>
-                                        <td >
-                                            21533 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
-
-                                    <tr >
-                                        <td >
-                                            DakhsinKhan-05
-                                        </td>
-                                        <td >
-                                            Uttara
-                                        </td>
-                                        <td >
-                                            205
-                                        </td>
-                                        <td >
-                                            17533 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr >
-                                        <td >
-                                            Uttara-01
-                                        </td>
-                                        <td >
-                                            Uttara
-                                        </td>
-                                        <td >
-                                            356
-                                        </td>
-                                        <td >
-                                            21533 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr >
-                                        <td >
-                                            Uttara-02
-                                        </td>
-                                        <td >
-                                            Uttara
-                                        </td>
-                                        <td >
-                                            356
-                                        </td>
-                                        <td >
-                                            21533 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr >
-                                        <td >
-                                            Uttara-03
-                                        </td>
-                                        <td >
-                                            Uttara
-                                        </td>
-                                        <td >
-                                            356
-                                        </td>
-                                        <td >
-                                            21533 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
 
                                     </tbody>
                                 </table>
+                                <center>
+                                    <button class="btn btn-danger pull-right"><i class="now-ui-icons arrows-1_refresh-69"></i> &nbsp; Load More</button>
+                                </center>
                             </div>
                         </div>
                     </div>

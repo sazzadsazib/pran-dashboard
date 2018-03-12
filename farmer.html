@@ -34,13 +34,13 @@
         </div>
         <div class="sidebar-wrapper">
             <ul class="nav">
-                <li class="active">
-                    <a href="#">
+                <li >
+                    <a href="index.html">
                         <i class="now-ui-icons shopping_delivery-fast"></i>
                         <p>Collection Point</p>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="farmer.html">
                         <i class="now-ui-icons education_atom"></i>
                         <p>Farmer Lists</p>
@@ -57,7 +57,7 @@
     </div>
     <div class="main-panel">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-white  navbar-absolute bg-primary fixed-top">
             <div class="container-fluid">
                 <div class="navbar-wrapper">
                     <div class="navbar-toggle">
@@ -118,76 +118,7 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <div class="panel-header panel-header-lg panel-header-custom-color">
-            <canvas id="bigDashboardChart"></canvas>
-        </div>
-        <div class="content">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <h5 class="card-category">Milk Collected</h5>
-                            <h4 class="card-title">Last 7 Days</h4>
-                            <div class="dropdown">
-                                <button type="button" class="btn btn-round btn-sm btn-default  btn-simple btn-icon no-caret" >
-                                    <i class="now-ui-icons arrows-1_refresh-69"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="lineChartExample"></canvas>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <h5 class="card-category">Payment Done</h5>
-                            <h4 class="card-title">Last 7 Days</h4>
-                            <div class="dropdown">
-                                <button type="button" class="btn btn-round btn-sm btn-default  btn-simple btn-icon no-caret" >
-                                    <i class="now-ui-icons arrows-1_refresh-69"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="lineChartExampleWithNumbersAndGrid"></canvas>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <h5 class="card-category">Payment Issue</h5>
-                            <h4 class="card-title">Last 7 Days</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="barChartSimpleGradientsNumbers"></canvas>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="now-ui-icons ui-2_time-alarm"></i> Last 7 days
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="content" style="margin-top: 100px;">
             <div class="row">
                 <div class="col-md-12">
                     <div class="card" style="padding: 30px">
@@ -195,7 +126,7 @@
                             <div class="col-md-6">
                                 <div class="card-header">
                                     <h5 class="card-category">Information of</h5>
-                                    <h4 class="card-title"> Collection Points</h4>
+                                    <h4 class="card-title">All Farmers</h4>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -204,9 +135,9 @@
                                         <i class="now-ui-icons ui-1_zoom-bold"></i> Sort
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">Sort By Name</a>
+                                        <a class="dropdown-item" href="#">Sort By Update</a>
                                         <a class="dropdown-item" href="#">Sort By Location</a>
-                                        <a class="dropdown-item" href="#">Sort By Date</a>
-                                        <a class="dropdown-item" href="#">Sort By Highest Collection</a>
                                     </div>
                                 </div>
                             </div>
@@ -216,16 +147,19 @@
                                 <table class="table">
                                     <thead class=" text-primary">
                                     <th >
-                                        Collection Point
+                                        Full Name
                                     </th>
                                     <th >
-                                        Area
+                                        Location
+                                    </th>
+                                    <th>
+                                        Phone
                                     </th>
                                     <th >
-                                        Milk Collected(Litre)
+                                        Milk (Litre)
                                     </th>
                                     <th >
-                                        Total Value
+                                        Total Transaction
                                     </th>
                                     <th  class="text-right" >
                                         Details
@@ -235,146 +169,192 @@
                                     <tbody>
                                     <tr >
                                         <td >
-                                            Gazipur-01
+                                           <img src="https://c1.staticflickr.com/6/5497/9038087312_586fd97cf1_b.jpg" class="img-avatar-custom" /> Abdul Karim
                                         </td>
                                         <td >
                                             Gazipur
+                                        </td>
+                                        <td>
+                                            +880 156 345 2333
                                         </td>
                                         <td >
                                             454
                                         </td>
                                         <td >
-                                            24970 bdt
+                                            45056 bdt
                                         </td>
                                         <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
+                                            <a class="btn btn-sm btn-danger" href="farmerdetails.html">
                                                 <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr >
                                         <td >
-                                            Gazipur-02
+                                            <img src="https://geneticliteracyproject.org/wp-content/uploads/2016/08/Harvesting-non-Bt-brinjal-from-his-cousins-field.png" class="img-avatar-custom" /> Mahmud Jakir
                                         </td>
                                         <td >
                                             Gazipur
+                                        </td>
+                                        <td>
+                                            +880 156 345 2333
                                         </td>
                                         <td >
                                             424
                                         </td>
                                         <td >
-                                            23950 bdt
+                                            45666 bdt
                                         </td>
                                         <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
+                                            <a  href="farmerdetails.html" class="btn btn-sm btn-danger">
                                                 <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr >
                                         <td >
-                                            Savar-01
+                                            <img src="https://i.pinimg.com/originals/55/4b/6e/554b6e31717f12c5e2b3185ae0c47a14.jpg" class="img-avatar-custom" /> Taposh Paul
                                         </td>
                                         <td >
-                                            Savar
+                                            Dakhsin Khan
+                                        </td>
+                                        <td>
+                                            +880 156 345 2333
                                         </td>
                                         <td >
-                                            332
+                                            1200
                                         </td>
                                         <td >
-                                            19970 bdt
+                                            78999 bdt
                                         </td>
                                         <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
+                                            <a  href="farmerdetails.html" class="btn btn-sm btn-danger">
                                                 <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr >
                                         <td >
-                                            Savar-02
-                                        </td>
-                                        <td >
-                                            Savar
-                                        </td>
-                                        <td >
-                                            430
-                                        </td>
-                                        <td >
-                                            25970 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
-
-                                    <tr >
-                                        <td >
-                                            Savar-03
-                                        </td>
-                                        <td >
-                                            Savar
-                                        </td>
-                                        <td >
-                                            436
-                                        </td>
-                                        <td >
-                                            26770 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
-
-                                    <tr >
-                                        <td >
-                                            Savar-04
-                                        </td>
-                                        <td >
-                                            Savar
-                                        </td>
-                                        <td >
-                                            344
-                                        </td>
-                                        <td >
-                                            21533 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
-
-                                    <tr >
-                                        <td >
-                                            DakhsinKhan-05
+                                            <img src="http://www.usaid.gov/sites/default/files/nodeimage/13697738275_ad6d5bf8ba_k.jpg" class="img-avatar-custom" /> Pranto Biswas
                                         </td>
                                         <td >
                                             Uttara
+                                        </td>
+                                        <td>
+                                            +880 156 345 2333
+                                        </td>
+                                        <td >
+                                            1200
+                                        </td>
+                                        <td >
+                                            89944 bdt
+                                        </td>
+                                        <td  class="text-right" >
+                                            <a  href="farmerdetails.html" class="btn btn-sm btn-danger">
+                                                <i class="now-ui-icons travel_info"></i> See Details
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr >
+                                        <td >
+                                            <img src="https://www.usaid.gov/sites/default/files/styles/732_width/public/nodeimage/Bangladesh_Gender-WE_Woman-Farmer.jpg" class="img-avatar-custom" /> Maqsuda Akhter
+                                        </td>
+                                        <td >
+                                            Dakhsin khan
+                                        </td>
+                                        <td>
+                                            +880 156 345 2333
+                                        </td>
+                                        <td >
+                                            788
+                                        </td>
+                                        <td >
+                                            67888 bdt
+                                        </td>
+                                        <td  class="text-right" >
+                                            <a  href="farmerdetails.html" class="btn btn-sm btn-danger">
+                                                <i class="now-ui-icons travel_info"></i> See Details
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr >
+                                        <td >
+                                            <img src="http://1e8q3q16vyc81g8l3h3md6q5f5e.wpengine.netdna-cdn.com/wp-content/uploads/2016/06/BangladeshGrameenphone-470x271.jpg" class="img-avatar-custom" /> Taposh Debnath
+                                        </td>
+                                        <td >
+                                            Khagan
+                                        </td>
+                                        <td>
+                                            +880 156 345 2333
+                                        </td>
+                                        <td >
+                                            455
+                                        </td>
+                                        <td >
+                                            76665 bdt
+                                        </td>
+                                        <td  class="text-right" >
+                                            <a  href="farmerdetails.html" class="btn btn-sm btn-danger">
+                                                <i class="now-ui-icons travel_info"></i> See Details
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr >
+                                        <td >
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJGzoiLdazhF6gIxRStg-6PGklH1UM53NKXxuYgl2ApbA4470I" class="img-avatar-custom" /> Sakib Mahmud
+                                        </td>
+                                        <td >
+                                            Uttara
+                                        </td>
+                                        <td>
+                                            +880 156 345 2333
                                         </td>
                                         <td >
                                             205
                                         </td>
                                         <td >
-                                            17533 bdt
+                                            34444 bdt
                                         </td>
                                         <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
+                                            <a  href="farmerdetails.html" class="btn btn-sm btn-danger">
                                                 <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr >
                                         <td >
-                                            Uttara-01
+                                            <img src="https://messiahleper.files.wordpress.com/2011/10/dsc07909.jpg" class="img-avatar-custom" /> Rahat Khan
                                         </td>
                                         <td >
                                             Uttara
+                                        </td>
+                                        <td>
+                                            +880 156 345 2333
+                                        </td>
+                                        <td >
+                                            45
+                                        </td>
+                                        <td >
+                                            7666 bdt
+                                        </td>
+                                        <td  class="text-right" >
+                                            <a  href="farmerdetails.html" class="btn btn-sm btn-danger">
+                                                <i class="now-ui-icons travel_info"></i> See Details
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >
+                                            <img src="https://mygoldenbengal.files.wordpress.com/2014/12/happy-farmer-char-640.jpg?w=640&h=427" class="img-avatar-custom" /> Mahmud Khan
+                                        </td>
+                                        <td >
+                                            Uttara
+                                        </td>
+                                        <td>
+                                            +880 156 345 2333
                                         </td>
                                         <td >
                                             356
@@ -383,52 +363,18 @@
                                             21533 bdt
                                         </td>
                                         <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
+                                            <a  href="farmerdetails.html" class="btn btn-sm btn-danger">
                                                 <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr >
-                                        <td >
-                                            Uttara-02
-                                        </td>
-                                        <td >
-                                            Uttara
-                                        </td>
-                                        <td >
-                                            356
-                                        </td>
-                                        <td >
-                                            21533 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr >
-                                        <td >
-                                            Uttara-03
-                                        </td>
-                                        <td >
-                                            Uttara
-                                        </td>
-                                        <td >
-                                            356
-                                        </td>
-                                        <td >
-                                            21533 bdt
-                                        </td>
-                                        <td  class="text-right" >
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class="now-ui-icons travel_info"></i> See Details
-                                            </button>
+                                            </a>
                                         </td>
                                     </tr>
 
+
                                     </tbody>
                                 </table>
+                                <center>
+                                    <button class="btn btn-danger pull-right"><i class="now-ui-icons arrows-1_refresh-69"></i> &nbsp; Load More</button>
+                                </center>
                             </div>
                         </div>
                     </div>
